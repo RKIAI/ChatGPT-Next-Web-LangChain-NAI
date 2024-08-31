@@ -33,7 +33,7 @@ const ru: PartialLocaleType = {
     Send: "Отправить",
     Config: {
       Reset: "Сбросить настройки",
-      SaveAs: "Сохранить как маску",
+      SaveAs: "Сохранить как промпт",
     },
   },
   Export: {
@@ -102,17 +102,17 @@ const ru: PartialLocaleType = {
         Title: "Отключить автозаполнение",
         SubTitle: "Ввод / для запуска автозаполнения",
       },
-      List: "Список подсказок",
+      List: "Список промптов",
       ListCount: (builtin: number, custom: number) =>
         `${builtin} встроенных, ${custom} пользовательских`,
       Edit: "Редактировать",
       Modal: {
-        Title: "Список подсказок",
+        Title: "Список промптов",
         Add: "Добавить",
-        Search: "Поиск подсказок",
+        Search: "Поиск промптов",
       },
       EditModal: {
-        Title: "Редактировать подсказку",
+        Title: "Редактировать промпт",
       },
     },
     HistoryCount: {
@@ -158,7 +158,7 @@ const ru: PartialLocaleType = {
   },
   Store: {
     DefaultTopic: "Новый разговор",
-    BotHello: "Здравствуйте! Как я могу вам помочь сегодня?",
+    BotHello: "Здравствуйте! Я GPT-ChatBot. Как я могу вам помочь сегодня?",
     Error: "Что-то пошло не так. Пожалуйста, попробуйте еще раз позже.",
     Prompt: {
       History: (content: string) =>
@@ -177,8 +177,8 @@ const ru: PartialLocaleType = {
   },
   Context: {
     Toast: (x: any) => `С ${x} контекстными подсказками`,
-    Edit: "Контекстные и памятные подсказки",
-    Add: "Добавить подсказку",
+    Edit: "Контекстные и памятные промптs",
+    Add: "Добавить промпт",
   },
   Plugin: {
     Name: "Плагин",
@@ -187,15 +187,15 @@ const ru: PartialLocaleType = {
     Sysmessage: "Вы - ассистент, который",
   },
   Mask: {
-    Name: "Маска",
+    Name: "Промпт",
     Page: {
-      Title: "Шаблон подсказки",
-      SubTitle: (count: number) => `${count} шаблонов подсказок`,
+      Title: "Шаблон промптов",
+      SubTitle: (count: number) => `${count} шаблонов промптов`,
       Search: "Поиск шаблонов",
       Create: "Создать",
     },
     Item: {
-      Info: (count: number) => `${count} подсказок`,
+      Info: (count: number) => `${count} промптов`,
       Chat: "Чат",
       View: "Просмотр",
       Edit: "Редактировать",
@@ -204,7 +204,7 @@ const ru: PartialLocaleType = {
     },
     EditModal: {
       Title: (readonly: boolean) =>
-        `Редактирование шаблона подсказки ${
+        `Редактирование шаблона промпта ${
           readonly ? "(только для чтения)" : ""
         }`,
       Download: "Скачать",
@@ -218,8 +218,8 @@ const ru: PartialLocaleType = {
   NewChat: {
     Return: "Вернуться",
     Skip: "Пропустить",
-    Title: "Выберите маску",
-    SubTitle: "Общайтесь с душой за маской",
+    Title: "Выберите промпт",
+    SubTitle: "Общайтесь с GPT-ChatBot.ru используя промпты",
     More: "Найти еще",
     NotShow: "Не показывать снова",
     ConfirmNoShow:
